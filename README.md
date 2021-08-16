@@ -1,1 +1,1 @@
-# black_jack
+# rails_basic
