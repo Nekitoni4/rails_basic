@@ -8,6 +8,6 @@ class Test < ApplicationRecord
     target_categories_ids.each do |category_id|
       target_names << Test.where("category_id = ?", category_id).select(:title).first.title
     end
-    target_names
+    target_names.sort { |a, b| b <=> a}
   end
 end
