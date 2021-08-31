@@ -5,4 +5,5 @@
     Test.create(title: "Тест №#{i}", level: i, category_id: i)
     Question.create(body: "Вопрос №#{i}", test_id: i)
     Answer.create(body: "Ответ №#{i}", correct: false, question_id: i)
+    TestUser.create(test_id: i, user_id: i)
 end
